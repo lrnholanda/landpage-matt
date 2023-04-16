@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Matt Henrique</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <span class="logo">Matt</span>
+                <ul class="links">
+                   <li><a class="links-btn">home</a></li>
+                   <li><a class="links-btn">contact</a></li>
+                   <li><a class="links-btn">posts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hello m-b"><h1 class="saldacao">Hi there</h1>
+                <img src="/img/hand.png"/ width="50px">
+            </div>
+            <div class="hello"><h1 class="saldacao">I'm Mateus Henrique</h1>
+                <i class="fa-brands fa-linkedin icons"></i>
+                <i class="fa-brands fa-github icons"></i>
+                <i class="fa-brands fa-twitter icons"></i>
+            </div>
+            <div class="type">
+                <span class="text first-text">I </span>
+                <span class="text sec-text">&lt;white and teach&gt;</span>
+                <span class="text thi-text"> code</span>
+            </div>
+            <div class="btns">
+            <a class="btn green-btn btn-4" href="#portfolio"><span>My Portfolio</span></a>
+            <a class="btn light-bnt" href="#questions"> Question & Answers</a>
+            </div> 
+        
+        </section>
+
+        <section class="aboutme">
+            <div class="wrapper">
+                <div class="content">
+                    <h1 class="aboutme-h1">My Skills</h1>
+                    <p class="am-p">I will teach you <span class="green-sp">React</span>, <span class="green-sp"> Angular</span><br>
+                    <span class="green-sp"> JavaScript</span>, <span class="green-sp"> TypeScript</span>, <span class="green-sp"> HTML/CSS</span>, <span class="green-sp"> Node.js</span>,<br>
+                    <span class="green-sp"> SQL/NoSQL</span>, and more.
+                </p>
+
+                <i class="fa-solid fa-arrow-down arrow"></i>
+                </div>
+                <div class="content solid-color">
+                    <div class="user-pic">
+                        <img class="userpic" src="/img/joao.jpg" alt="" width="50px">
+                        <div class="user">
+                            <span class="usertext username">João Pedro</span>
+                            <span class="usertext learn">Learned React</span>
+                        </div>
+                    </div>
+                   
+                   <p class="am-p m-l">I can't belive I learning that much in just two weeks! He really knows any <br> small detail in React </p>
+        
+                </div>
+            </div>
+           
+        </section>
+
+        
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "<write and teach>";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "<write and teach>";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "<write and teach>";
+            }, 8000); //1s = 1000 milliseconds
+        }
+
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>    
+    </div>
+   
+</body>
+</html>

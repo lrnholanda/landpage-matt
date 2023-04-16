@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    height: 100vh;
+    background-color: #131313;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links-btn {
+    color: #7C7C7C;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.5;
+    cursor: pointer;
+}
+
+.links-btn:hover {
+    color: #E4E4E4;
+}
+
+.header {
+    //padding: 1.5rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #F2F227, #D3F442, #AFF761 );
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    align-items: center
+    justify-content: center;
+    gap: 2em;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.saldacao {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #E4E4E4;
+}
+
+section {
+    margin-top: 10rem;
+}
+
+.m-b {
+    margin-bottom:  1.5rem;
+}
+
+.icons {
+    font-size: 2rem;
+    color: #7C7C7C;
+}
+
+.type {
+    width: 350px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.type .text {
+    position: relative;
+    color: #FFDA16;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.type .text.first-text {
+    color: #E4E4E4;
+}
+
+.type .text.thi-text {
+    color: #E4E4E4;
+}
+
+.text.sec-text:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #131313;
+    border-left: 2px solid #E4E4E4;
+    animation: animate 4s steps(12) infinite;
+
+}
+
+@keyframes animate{
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.btns{
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding:  0.9rem 3rem;
+    border-radius: 0.3rem;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.green-btn {
+    background-color: #32FF84;
+    color: #131313;
+    transition: all 0.4s linear;
+    border: 2px solid #32FF84;
+    cursor: pointer;
+}
+
+.green-btn:hover {
+    border: 2px solid #32FF84;
+    background-color: transparent;
+    color:  #32FF84;
+}
+
+.light-bnt {
+    color: #32FF84;
+}
+
+.aboutme-h1 {
+    color:#E4E4E4;
+    font-weight: semi-bold;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.green-sp {
+    color: #32FF84;
+    color: 
+}
+
+.am-p {
+    font-family: 'Source Code Pro', monospace;
+    color: #E4E4E4;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.content {
+    width: 50%;
+}
+
+.solid-color {
+    background-color: #191919;
+    padding: 1.4rem;
+    border-radius: 5px;
+}
+
+.username {
+    color:#E4E4E4;
+}
+
+.learn {
+    color: #7C7C7C;
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    margin-bottom: 1rem;
+}
+
+.userpic {
+    border-radius: 50%;
+}
+
+.usertext {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.user-pic {
+    display: flex;
+    gap: 0.95em;
+    margin-bottom: 1rem;
+}
+
+.quote {
+    color: #E4E4E4;
+    font-size: 1.5rem;
+}
+
+.m-l {
+    margin-left: 1rem;
+}
+
+.arrow {
+    font-size: 2.5rem;
+    color: #32FF84;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+  
