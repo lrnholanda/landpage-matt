@@ -27,7 +27,7 @@
                 </ul>
             </nav>
         </header>
-        <section class="hero">
+        <section class="hero mobile">
             <div class="hello m-b"><h1 class="saldacao">Hi there</h1>
                 <img src="/img/hand.png"/ width="50px">
             </div>
@@ -71,28 +71,49 @@
                    <p class="am-p m-l">I can't belive I learning that much in just two weeks! He really knows any <br> small detail in React </p>
         
                 </div>
-            </div>
-           
+            </div>  
+        </section>
+
+        <section class="s-accordion">
+            <div class="accordion">
+                <h1 class="aboutme-h1">Frequently Asked Questions</h1>
+            
+                <div class="a-container">
+                  <div class="label code-font"><p class="white-text"> What is <span class="green-sp">HTML</span>?</p>
+                </div>
+                  <div class="a-content code-font"><p class="white-text m-t">Hypertext Markup Language (HTML) is a computer language that makes up most web pages and online applications.</p></div>
+                </div>
+                
+                <div class="a-container">
+                  <div class="label code-font"><p class="white-text"> What is <span class="green-sp">CSS</span>?</p>
+                 </div>
+                  <div class="a-content code-font"><p class="white-text m-t">CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users.</p>
+                  </div>
+                </div>
+                
+                <div class="a-container">
+                  <div class="label code-font"><p class="white-text">What is <span class="green-sp">JavaScript</span>?</p>  
+                </div>
+                  <div class="a-content code-font"><p class="white-text m-t">JavaScript is a scripting or programming language that allows you to implement complex features on web pages</p></div>
+                </div>
+                
+                <div class="a-container">
+                  <div class="label code-font"><p class="white-text">What is <span class="green-sp">React</span>?</p>
+                </div>
+                  <div class="a-content code-font"><p class="white-text m-t">React is a JavaScript library created for building fast and interactive user interfaces for web and mobile applications.</p> </div>
+                </div>
+                
+                <div class="a-container">
+                  <div class="label code-font"><p class="white-text">What is <span class="green-sp">Node.js</span>?</p>
+                   </div>
+                  <div class="a-content code-font"><p class="white-text m-t">Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.</p></div>
+                </div>  
+              </div>
         </section>
 
         
-    <script>
-        const text = document.querySelector(".sec-text");
-
-        const textLoad = () => {
-            setTimeout(() => {
-                text.textContent = "<write and teach>";
-            }, 0);
-            setTimeout(() => {
-                text.textContent = "<write and teach>";
-            }, 4000);
-            setTimeout(() => {
-                text.textContent = "<write and teach>";
-            }, 8000); //1s = 1000 milliseconds
-        }
-
-        textLoad();
-        setInterval(textLoad, 12000);
+    <script src="script.js">
+   
     </script>    
     </div>
    

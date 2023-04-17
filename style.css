@@ -25,6 +25,14 @@ a {
     text-decoration: none;
 }
 
+.code-font {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.m-t {
+    margin-top: 0.8rem;
+}
+
 .links-btn {
     color: #7C7C7C;
     font-weight: 600;
@@ -254,4 +262,72 @@ section {
     margin-top: 2rem;
     margin-left: 1rem;
 }
+
+.accordion .a-container {
+    position: relative;
+}
+
+.accordion .label {
+    position: relative;
+}
+
+.accordion .a-content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
   
+.a-container {
+    background-color: #191919;
+    padding: 1.3rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.white-text {
+    color: #E4E4E4;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.accordion .a-container.active .a-content {
+    height: 50px;
+}
+
+.accordion .label::before {
+    content: "+";
+    color: #E4E4E4;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+.accordion .a-container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
+  }
